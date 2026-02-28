@@ -1,5 +1,3 @@
-"""raylib [shaders] example - deferred rendering (Python port)."""
-
 from __future__ import annotations
 
 import random
