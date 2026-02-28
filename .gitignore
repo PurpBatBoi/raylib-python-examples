@@ -14,8 +14,8 @@ __pycache__/
 .idea/
 .vscode/
 
-# Keep local reference C sources out of the public repo
 SHADERS/original_c
 AUDIO/original_c
 CORE/original_c
+TEXTURES/original_c
 raylib.h
