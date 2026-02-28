@@ -15,5 +15,6 @@ __pycache__/
 .vscode/
 
 # Keep local reference C sources out of the public repo
-AUDIO/original_c/
-CORE/original_c/
+CORE/original_c
+SHADERS/original_c
+AUDIO/original_c

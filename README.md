@@ -4,12 +4,13 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Type checked: mypy](https://img.shields.io/badge/type%20checked-mypy-blue)](http://mypy-lang.org/)
 
-A collection of practical examples demonstrating audio, graphics, and game development with **Raylib** and **pyray** in Python.
+A collection of practical examples demonstrating audio, graphics, and game development with **Raylib** and **pyray** in Python, with **PyGLM** for vector/matrix math in advanced rendering examples.
 
 ## Features
 
 - 📦 **Multiple example categories**: Audio, textures, input, and more
 - 🎯 **Modern Python**: Type hints, dataclasses, and Python 3.14 best practices
+- 🧮 **GLM math support**: Uses **PyGLM** for vector/matrix math in advanced shader examples
 - ✅ **Validated code**: All examples pass `mypy` type checking and `black` formatting
 - 🔧 **Easy setup**: Single venv and pip install
 
@@ -18,6 +19,7 @@ A collection of practical examples demonstrating audio, graphics, and game devel
 ### Prerequisites
 - Python 3.10 or higher
 - pip (usually included with Python)
+- PyGLM (installed via `requirements.txt`)
 
 ### Installation
 
