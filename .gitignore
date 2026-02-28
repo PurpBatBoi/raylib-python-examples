@@ -18,4 +18,4 @@ SHADERS/original_c
 AUDIO/original_c
 CORE/original_c
 TEXTURES/original_c
-raylib.h
+raylib-headers
