@@ -25,8 +25,8 @@ A collection of practical examples demonstrating audio, graphics, and game devel
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Raylib-Python-Examples.git
-cd Raylib-Python-Examples
+git clone https://github.com/PurpBatBoi/raylib-python-examples.git
+cd raylib-python-examples
 
 # Create and activate virtual environment
 python3 -m venv .venv
@@ -47,6 +47,51 @@ python AUDIO/audio_sound_positioning.py
 ```
 
 Browse the repository structure to explore all available examples by category.
+
+## Running Demos In A Web Browser (Experimental)
+
+This repository now includes a small `pygbag` workflow so you can test web compatibility without modifying original desktop demos.
+
+### 1) Install pygbag
+
+```bash
+python -m pip install --upgrade pygbag
+```
+
+### 2) Use a web-ready demo variant (`*/web/*.py`)
+
+Current example:
+
+```bash
+python CORE/web/core_2d_camera.py
+```
+
+The web variants use:
+- `async def main()`
+- `await asyncio.sleep(0)` inside the frame loop
+- optional browser resize call under Emscripten
+
+### 3) Build + serve with pygbag
+
+From repo root:
+
+```bash
+python WEB/run_pygbag_demo.py CORE/web/core_2d_camera.py
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+The staging project is created under `.web_build/<demo_name>/`.
+
+### Notes and limitations
+
+- Browser support depends on Emscripten + pygbag behavior and may differ per demo.
+- Audio-heavy demos may require conditional fallbacks on web builds.
+- Put web variants in `web/` folders (for example `CORE/web/core_2d_camera.py`) instead of changing desktop files.
 
 ## Development
 

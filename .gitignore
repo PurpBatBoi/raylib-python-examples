@@ -18,3 +18,4 @@ __pycache__/
 SHADERS/original_c
 AUDIO/original_c
 CORE/original_c
+raylib.h
